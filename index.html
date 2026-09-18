@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قوانين سيرفر Lord Town RP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Cairo', sans-serif; user-select: none; }
+        body { background-color: #0d0e12; color: #e1e1e6; padding: 20px 15px 100px 15px; display: flex; justify-content: center; }
+        .container { max-width: 850px; width: 100%; }
+
+        /* الهيدر */
+        .header { text-align: center; margin-bottom: 35px; border-bottom: 2px solid #1f222e; padding-bottom: 25px; margin-top: 10px; }
+        .header h1 { color: #ff4b4b; font-size: 30px; font-weight: 800; margin-bottom: 8px; text-shadow: 0 0 15px rgba(255, 75, 75, 0.3); }
+        .header p { color: #8a8d9b; font-size: 15px; font-weight: 600; }
+
+        /* الأقسام والقوانين */
+        .section { background: #16171d; border-radius: 16px; padding: 22px; margin-bottom: 20px; border: 1px solid #202228; box-shadow: 0 4px 20px rgba(0,0,0,0.3); }
+        .section h2 { color: #38bdf8; font-size: 20px; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; font-weight: 700; border-bottom: 1px solid #222632; padding-bottom: 10px; }
+        .rules-list { list-style: none; }
+        .rules-list li { padding: 12px 0; border-bottom: 1px solid #1f222a; line-height: 1.7; font-size: 15px; color: #d1d5db; }
+        .rules-list li:last-child { border-bottom: none; }
+        .rules-list li strong { color: #ff4b4b; margin-left: 5px; }
+
+        /* مشغل الموسيقى العائم */
+        .music-control {
+            position: fixed;
+            bottom: 25px;
+            left: 25px;
+            background: #16171d;
+            border: 1px solid #38bdf8;
+            padding: 10px 18px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+            z-index: 9999;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .music-control:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(56, 189, 248, 0.3); }
+        .music-btn { background: #38bdf8; border: none; width: 34px; height: 34px; border-radius: 50%; color: #0d0e12; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: bold; cursor: pointer; }
+        .music-text { font-size: 13px; font-weight: 700; color: #fff; }
+
+        .footer { text-align: center; margin-top: 40px; color: #525666; font-size: 13px; font-weight: 600; }
+    </style>
+</head>
+<body>
+
+<!-- عنصر الصوت (ضع رابط الصوت أو ارفع ملف باسم music.mp3) -->
+<audio id="bgMusic" loop preload="auto">
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- مشغل الموسيقى العائم -->
+<div class="music-control" onclick="toggleMusic()">
+    <button class="music-btn" id="musicIcon">▶</button>
+    <span class="music-text" id="musicStatus">تشغيل الموسيقى 🎵</span>
+</div>
+
+<div class="container">
+    <div class="header">
+        <h1>📜 قوانين سيرفر Lord Town RP</h1>
+        <p>الرجاء قراءة القوانين بتمعن لتجنب العقوبات والمحظورات داخل المدينة</p>
+    </div>
+
+    <!-- القوانين العامة -->
+    <div class="section">
+        <h2>📌 القوانين العامة (General Rules)</h2>
+        <ul class="rules-list">
+            <li><strong>1. الاحترام المتبادل:</strong> يُمنع منعاً باتاً السب، الشتم، أو الإساءة لأي لاعب أو إداري خارج النطاق (OOC).</li>
+            <li><strong>2. تقمص الشخصية (Roleplay):</strong> يجب الالتزام بالواقعية وتجسيد شخصيتك بالكامل طوال تواجدك في المدينة.</li>
+            <li><strong>3. قانون الحياة الواحدة (NLR):</strong> عند إصابتك ونقلك للمستشفى، تفقد جميع معلومات الحدث الأخير ولا يحق لك العودة لنفس المكان.</li>
+            <li><strong>4. التخريب (FailRP):</strong> يمنع القيام بأعمال غير واقعية أو استغلال ثغرات اللعبة للحصول على أسبقية.</li>
+        </ul>
+    </div>
+
+    <!-- قوانين السرقات -->
+    <div class="section">
+        <h2>🚨 قوانين السرقات والسطو</h2>
+        <ul class="rules-list">
+            <li><strong>1. تواجد الشرطة:</strong> يُمنع بدء السرقات الكبرى إلا في حال وجود العدد المطلوب من رجال الشرطة المتصلين.</li>
+            <li><strong>2. التفاوض والرهائن:</strong> يُمنع استخدام رهائن وهميين أو الاتفاق المسبق مع الرهينة. المفاوضات أولوية لحماية الأرواح.</li>
+            <li><strong>3. عدم التكرار:</strong> يلتزم جميع الأفراد بالوقت المحدد (Cooldown) بين السرقات.</li>
+        </ul>
+    </div>
+
+    <!-- المناطق الآمنة -->
+    <div class="section">
+        <h2>🛡️ المناطق الآمنة (Green Zones)</h2>
+        <ul class="rules-list">
+            <li>تُعتبر المستشفيات، مراكز الشرطة، والدوائر الحكومية مناطق آمنة يُحظر فيها إطلاق النار، الخطف، أو إثارة المشاكل.</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        جميع الحقوق محفوظة © Lord Town RP
+    </div>
+</div>
+
+<script>
+    const audio = document.getElementById('bgMusic');
+    const musicIcon = document.getElementById('musicIcon');
+    const musicStatus = document.getElementById('musicStatus');
+
+    // تشغيل الموسيقى عند أول لمسة للموقع لتجاوز حظر المتصفحات للتشغيل التلقائي
+    function startAudioOnInteraction() {
+        if (audio.paused) {
+            audio.play().then(() => {
+                updateUI(true);
+            }).catch(() => {});
+        }
+        window.removeEventListener('click', startAudioOnInteraction);
+        window.removeEventListener('touchstart', startAudioOnInteraction);
+    }
+
+    window.addEventListener('click', startAudioOnInteraction);
+    window.addEventListener('touchstart', startAudioOnInteraction);
+
+    // زر التحكم بالموسيقى (تشغيل / إيقاف)
+    function toggleMusic() {
+        if (audio.paused) {
+            audio.play();
+            updateUI(true);
+        } else {
+            audio.pause();
+            updateUI(false);
+        }
+    }
+
+    function updateUI(isPlaying) {
+        if (isPlaying) {
+            musicIcon.textContent = '❚❚';
+            musicStatus.textContent = 'إيقاف الموسيقى 🎵';
+        } else {
+            musicIcon.textContent = '▶';
+            musicStatus.textContent = 'تشغيل الموسيقى 🎵';
+        }
+    }
+</script>
+
+</body>
+</html>
