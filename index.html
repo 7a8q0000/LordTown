@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Golf City RP - القوانين الرسمية</title>
+    <title>Lord Town RP - الـقـوانـيـن الـرسـمـيـة</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Cairo', sans-serif; user-select: none; }
@@ -22,11 +22,11 @@
             justify-content: space-between;
             align-items: center;
         }
-        .nav-brand { font-weight: 800; font-size: 20px; color: #fff; }
-        .nav-brand span { color: #00f2fe; }
+        .nav-brand { font-weight: 800; font-size: 20px; color: #fff; letter-spacing: 0.5px; }
+        .nav-brand span { color: #ff6b00; }
         .btn-discord {
-            background: #00f2fe;
-            color: #090d14;
+            background: #ff6b00;
+            color: #ffffff;
             padding: 8px 20px;
             border-radius: 20px;
             text-decoration: none;
@@ -35,20 +35,20 @@
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            box-shadow: 0 0 15px rgba(0, 242, 254, 0.3);
+            box-shadow: 0 0 15px rgba(255, 107, 0, 0.4);
             transition: 0.3s ease;
         }
-        .btn-discord:hover { background: #38bdf8; transform: translateY(-2px); box-shadow: 0 0 20px rgba(0, 242, 254, 0.5); }
+        .btn-discord:hover { background: #ff8800; transform: translateY(-2px); box-shadow: 0 0 20px rgba(255, 107, 0, 0.6); }
 
         /* واجهة البداية Hero Section */
         .hero { text-align: center; padding: 50px 20px 30px; display: flex; flex-direction: column; align-items: center; }
-        .hero-title { font-size: 42px; font-weight: 900; color: #00f2fe; margin-bottom: 8px; text-shadow: 0 0 20px rgba(0,242,254,0.4); }
+        .hero-title { font-size: 42px; font-weight: 900; color: #ff6b00; margin-bottom: 8px; text-shadow: 0 0 20px rgba(255, 107, 0, 0.4); }
         .hero-subtitle { color: #94a3b8; font-size: 16px; margin-bottom: 25px; font-weight: 600; }
         .scroll-down { color: #64748b; text-decoration: none; font-size: 14px; font-weight: 700; margin-top: 25px; display: flex; flex-direction: column; align-items: center; gap: 5px; }
 
         /* حاوية القوانين Accordions */
         .container { max-width: 800px; margin: 0 auto; padding: 0 15px; }
-        .section-header { text-align: center; font-size: 26px; font-weight: 800; color: #00f2fe; margin-bottom: 25px; }
+        .section-header { text-align: center; font-size: 26px; font-weight: 800; color: #ff6b00; margin-bottom: 25px; }
 
         .accordion-item {
             background: #0f172a;
@@ -58,7 +58,7 @@
             overflow: hidden;
             transition: all 0.3s ease;
         }
-        .accordion-item.active { border-color: #00f2fe; box-shadow: 0 0 18px rgba(0, 242, 254, 0.15); }
+        .accordion-item.active { border-color: #ff6b00; box-shadow: 0 0 18px rgba(255, 107, 0, 0.2); }
         .accordion-header {
             padding: 18px 20px;
             display: flex;
@@ -77,11 +77,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #00f2fe;
+            color: #ff6b00;
             font-size: 12px;
             transition: transform 0.3s ease, background 0.3s, color 0.3s;
         }
-        .accordion-item.active .accordion-icon { transform: rotate(180deg); background: #00f2fe; color: #090d14; }
+        .accordion-item.active .accordion-icon { transform: rotate(180deg); background: #ff6b00; color: #ffffff; }
 
         .accordion-body {
             max-height: 0;
@@ -90,16 +90,16 @@
             background: #0b1120;
             padding: 0 20px;
         }
-        .accordion-item.active .accordion-body { padding: 20px; max-height: 2500px; }
+        .accordion-item.active .accordion-body { padding: 20px; max-height: 3000px; }
 
         /* تنسيق النصوص والقوائم */
-        .intro-text { color: #94a3b8; font-size: 14px; line-height: 1.7; margin-bottom: 15px; font-weight: 600; padding-bottom: 10px; border-bottom: 1px dashed #1e293b; }
+        .intro-text { color: #94a3b8; font-size: 14px; line-height: 1.8; margin-bottom: 15px; font-weight: 600; padding-bottom: 10px; border-bottom: 1px dashed #1e293b; }
         .rule-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
-        .rule-item { display: flex; gap: 12px; font-size: 15px; line-height: 1.7; color: #cbd5e1; align-items: flex-start; }
+        .rule-item { display: flex; gap: 12px; font-size: 15px; line-height: 1.8; color: #cbd5e1; align-items: flex-start; }
         .rule-num {
-            background: rgba(0, 242, 254, 0.1);
-            color: #00f2fe;
-            border: 1px solid rgba(0, 242, 254, 0.3);
+            background: rgba(255, 107, 0, 0.1);
+            color: #ff6b00;
+            border: 1px solid rgba(255, 107, 0, 0.3);
             border-radius: 6px;
             padding: 2px 8px;
             font-weight: 800;
@@ -110,10 +110,10 @@
         .rule-note {
             margin-top: 18px;
             padding: 14px;
-            background: rgba(0, 242, 254, 0.05);
-            border: 1px solid rgba(0, 242, 254, 0.2);
+            background: rgba(255, 107, 0, 0.05);
+            border: 1px solid rgba(255, 107, 0, 0.2);
             border-radius: 10px;
-            color: #38bdf8;
+            color: #ff8800;
             font-size: 14px;
             text-align: center;
             font-weight: 700;
@@ -123,20 +123,20 @@
             padding: 14px 18px;
             background: #111e33;
             border-radius: 10px;
-            border-right: 4px solid #00f2fe;
+            border-right: 4px solid #ff6b00;
             font-size: 14px;
         }
-        .duration-box h4 { color: #00f2fe; margin-bottom: 8px; font-size: 15px; font-weight: 800; }
+        .duration-box h4 { color: #ff6b00; margin-bottom: 8px; font-size: 15px; font-weight: 800; }
         .duration-box ul { list-style: none; display: flex; flex-direction: column; gap: 6px; color: #e2e8f0; font-weight: 700; }
 
         /* جدول الأسعار */
         .price-table { width: 100%; border-collapse: collapse; margin-top: 5px; }
-        .price-table th { text-align: right; padding: 12px 10px; background: #131f37; color: #00f2fe; font-size: 15px; border-bottom: 2px solid #1e293b; font-weight: 800; }
+        .price-table th { text-align: right; padding: 12px 10px; background: #131f37; color: #ff6b00; font-size: 15px; border-bottom: 2px solid #1e293b; font-weight: 800; }
         .price-table th:last-child { text-align: left; }
         .price-table tr { border-bottom: 1px solid #1e293b; }
-        .price-table tr:hover { background: rgba(0, 242, 254, 0.03); }
+        .price-table tr:hover { background: rgba(255, 107, 0, 0.03); }
         .price-table td { padding: 12px 10px; font-size: 14px; font-weight: 700; }
-        .price-table td.amount { text-align: left; color: #00f2fe; direction: ltr; font-weight: 800; }
+        .price-table td.amount { text-align: left; color: #ff6b00; direction: ltr; font-weight: 800; }
 
         /* مشغل الموسيقى العائم */
         .music-btn {
@@ -145,23 +145,23 @@
             left: 20px;
             width: 50px;
             height: 50px;
-            background: #00f2fe;
-            color: #090d14;
+            background: #ff6b00;
+            color: #ffffff;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 0 20px rgba(0, 242, 254, 0.5);
+            box-shadow: 0 0 20px rgba(255, 107, 0, 0.5);
             cursor: pointer;
             z-index: 999;
             border: none;
             font-size: 20px;
             transition: transform 0.2s, background 0.3s;
         }
-        .music-btn:hover { transform: scale(1.08); }
+        .music-btn:hover { transform: scale(1.08); background: #ff8800; }
 
         footer { text-align: center; padding: 40px 20px 20px; color: #64748b; font-size: 13px; font-weight: 600; }
-        footer a { color: #00f2fe; text-decoration: none; }
+        footer a { color: #ff6b00; text-decoration: none; }
     </style>
 </head>
 <body>
@@ -171,92 +171,92 @@
     <button class="music-btn" id="musicToggle" onclick="toggleMusic()">🎵</button>
 
     <nav class="navbar">
-        <div class="nav-brand">Golf <span>City</span></div>
-        <a href="https://discord.gg/YOUR_DISCORD_LINK" target="_blank" class="btn-discord">الدخول إلى السيرفر</a>
+        <div class="nav-brand">Lord <span>Town</span></div>
+        <a href="https://discord.gg/‏EycTu8KDXA" target="_blank" class="btn-discord">الـدّخـول إلـى الـسّـيـرفـر</a>
     </nav>
 
     <section class="hero">
-        <h1 class="hero-title">Golf City</h1>
-        <p class="hero-subtitle">قوانين السيرفر الرسمية — احترمها لضمان تجربة ممتعة للجميع</p>
-        <a href="https://discord.gg/YOUR_DISCORD_LINK" target="_blank" class="btn-discord" style="padding: 12px 28px; font-size: 16px;">الدخول إلى السيرفر</a>
-        <a href="#rules" class="scroll-down">↓<br>القوانين</a>
+        <h1 class="hero-title">Lord Town</h1>
+        <p class="hero-subtitle">قـوا نـيـن الـسّـيـرفـر الـرّسـمـيـة — ا حـتـر مـهـا لـضـمـان تـجـر بـة مـمـتـعـة لـلـجـمـيـع</p>
+        <a href="https://discord.gg/YOUR_DISCORD_LINK" target="_blank" class="btn-discord" style="padding: 12px 28px; font-size: 16px;">الـدّخـول إ لـى الـسّـيـر فـر</a>
+        <a href="#rules" class="scroll-down">↓<br>الـقـوا نـيـن</a>
     </section>
 
     <main class="container" id="rules">
-        <h2 class="section-header">قوانين Golf City RP</h2>
+        <h2 class="section-header">قـوا نـيـن Lord Town RP</h2>
 
         <div class="accordion-item">
             <div class="accordion-header" onclick="toggleAccordion(this)">
-                <span>قوانين الحرب بين الدول</span>
+                <span>قـوا نـيـن الـحـرب بـيـن الـدّوَ ل</span>
                 <span class="accordion-icon">▼</span>
             </div>
             <div class="accordion-body">
                 <ul class="rule-list">
-                    <li class="rule-item"><span class="rule-num">(1)</span><div>يمنع سرقة أي عتاد عسكري مثل (المدافع / الخوذ).</div></li>
-                    <li class="rule-item"><span class="rule-num">(2)</span><div>يمنع مداهمة أي دولة إلا بالأسباب التالية (خطف أحد مواطنين الدولة الثانية أو خطف أحد عساكر الدولة الثانية / دخول حدود دولة من دولة أخرى / دخول شحنة لدولة أخرى / سيناريو مخطط).</div></li>
-                    <li class="rule-item"><span class="rule-num">(3)</span><div>في حال خطف أحد عساكر الدولة الثانية يمنع إعدامه إلا إذا كان رتبة من الضباط وفوق ويجب تنزيل إعلان.</div></li>
-                    <li class="rule-item"><span class="rule-num">(4)</span><div>في حال خطف أحد عساكر الدولة الثانية يجب التفاوض عليه ويمنع إبقائه من غير سيناريو.</div></li>
-                    <li class="rule-item"><span class="rule-num">(5)</span><div>يمنع المداهمة إلا في تواجد 6 أشخاص من الجهة المداهمة و 6 أشخاص من الجهة المتداهمة.</div></li>
+                    <li class="rule-item"><span class="rule-num">(1)</span><div>يـمـنـع سـرقـة أي عـتـاد عـسـكـري مـثـل (الـمـدافـع / الـخـوذ).</div></li>
+                    <li class="rule-item"><span class="rule-num">(2)</span><div>يـمـنـع مـداهـمـة أي دولـة إلا بـالأسـبـاب الـتـالـيـة (خـطـف أحـد مـواطـنـيـن الـدو لـة الـثـانـيـة أو خـطـف أحـد عـسـاكـر الـدولـة الـثـانـيـة / دخـول حـدود دولـة مـن دولـة أُخـرى / د خـول شـحـنـة لـدو لـة أُخـرى / سـيـنـاريـو مـخـطـط).</div></li>
+                    <li class="rule-item"><span class="rule-num">(3)</span><div>فـي حـال خـطـف أحـد عـسـاكـر الـدولـة الـثـانـيـة يـمـنـع إعـدامـه إلا إذا كـان رتـبـة مـن الـضـبـاط وفـوق ويـجـب تـنـزيـل إعـلان.</div></li>
+                    <li class="rule-item"><span class="rule-num">(4)</span><div>فـي حـال خـطـف أحـد عـسـاكـر الـدو لـة الـثـانـيـة يـجـب الـتـفـاوض عـلـيـه ويـمـنـع إبـقـائـه مـن غـيـر سـيـنـاريـو.</div></li>
+                    <li class="rule-item"><span class="rule-num">(5)</span><div>يـمـنـع الـمـداهـمـة إلا فـي تـواجـد 6 أشـخـاص مـن الـجـهـة الـمـداهـمـة و 6 أ شـخـاص مـن الـجـهـة الـمـتـداهـمـة.</div></li>
                 </ul>
-                <div class="rule-note">يرجى من عموم الأعضاء الالتزام بالقوانين التي بالأعلى لعدم محاسبتكم.</div>
+                <div class="rule-note">يـرجـى مـن عـمـوم الأ عـضـاء الـالـتـزام بـالـقـوانـيـن الـتـي بـالأعـلـى لـعـدم مـحـاسـبـتـكـم.</div>
             </div>
         </div>
 
         <div class="accordion-item">
             <div class="accordion-header" onclick="toggleAccordion(this)">
-                <span>بنود الرهائن – القواعد التنظيمية</span>
+                <span>بـنـود الـرّهـائـن – الـقـواعـد الـتـنـظـيـمـيـة</span>
                 <span class="accordion-icon">▼</span>
             </div>
             <div class="accordion-body">
-                <p class="intro-text">تؤكد رئاسة قولف أن هذه البنود وُضعت لحفظ حقوق الجهات واللاعبين، وتطبيقها يسهم في رفع مستوى الجودة داخل الرحلات.</p>
+                <p class="intro-text">تُـؤكـد رئـاسـة لـورد تـاون أن هـذه الـبـنـود وُضـعـت لـحـفـظ حـقـوق الـجـهـات والـلاعـبـيـن، وتـطـبـيـقـهـا يـسـهـم فـي رفـع مـسـتـوى الـجـودة داخـل الـرحـلات.</p>
                 <ul class="rule-list">
-                    <li class="rule-item"><span class="rule-num">(1)</span><div><strong>حظر الإهانة:</strong> يمنع عليك إهانة الرهينة من حيث الضرب والسب.</div></li>
-                    <li class="rule-item"><span class="rule-num">(2)</span><div><strong>الاحترام الواجب:</strong> يجب عليك احترام الرهينة.</div></li>
-                    <li class="rule-item"><span class="rule-num">(3)</span><div><strong>تقدير الحياة:</strong> يجب عليك تقدير حياة الرهينة.</div></li>
-                    <li class="rule-item"><span class="rule-num">(4)</span><div><strong>حظر الإعدام العشوائي:</strong> يمنع عليك إعدام الرهينة في حال لا توجد عداوات.</div></li>
-                    <li class="rule-item"><span class="rule-num">(5)</span><div><strong>حقوق المفاوض:</strong> في حال إعطائك المفاوض الأمان لرؤية الرهينة يمنع عليك خطفه أو قتله.</div></li>
-                    <li class="rule-item"><span class="rule-num">(6)</span><div><strong>سرعة التفاوض:</strong> في حال لديك رهينة يجب التفاوض عليها فوراً.</div></li>
-                    <li class="rule-item"><span class="rule-num">(7)</span><div><strong>الأماكن المعلنة:</strong> يمنع عليك أخذ الرهينة إلى مكان مجهول.</div></li>
-                    <li class="rule-item"><span class="rule-num">(8)</span><div><strong>مدة الاحتجاز:</strong> إذا مرّ على الرهينة ساعتين من غير فعل أي شيء، فيها يتم إطلاق سراحها.</div></li>
+                    <li class="rule-item"><span class="rule-num">(1)</span><div><strong>حـظـر الإهـانـة:</strong> يـمـنـع عـلـيـك إهـانـة الـرهـيـنـة مـن حـيـث الـضـرب والـسـب.</div></li>
+                    <li class="rule-item"><span class="rule-num">(2)</span><div><strong>الـاحـتـرام الـواجـب:</strong> يـجـب عـلـيـك احـتـرام الـر هـيـنـة.</div></li>
+                    <li class="rule-item"><span class="rule-num">(3)</span><div><strong>تـقـد يـر الـحـيـاة:</strong> يـجـب عـلـيـك تـقـد يـر حـيـاة الـر هـيـنـة.</div></li>
+                    <li class="rule-item"><span class="rule-num">(4)</span><div><strong>حـظـر الإعـدام الـعـشـوائـي:</strong> يـمـنـع عـلـيـك إعـدام الـر هـيـنـة فـي حـال لا تـوجـد عـداوات.</div></li>
+                    <li class="rule-item"><span class="rule-num">(5)</span><div><strong>حـقـوق الـمـفـاوض:</strong> فـي حـال إعـطـائـك الـمـفـاوض الأ مـان لـرؤ يـة الـر هـيـنـة يـمـنـع عـلـيـك خـطـفـه أو قـتـلـه.</div></li>
+                    <li class="rule-item"><span class="rule-num">(6)</span><div><strong>سـرعـة الـتـفـاوض:</strong> فـي حـال لـد يـك ر هـيـنـة يـجـب الـتـفـاوض عـلـيـهـا فـوراً.</div></li>
+                    <li class="rule-item"><span class="rule-num">(7)</span><div><strong>الأمـاكـن الـمـعـلـنـة:</strong> يـمـنـع عـلـيـك أخـذ الـرهـيـنـة إ لـى مـكـان مـجـهـول.</div></li>
+                    <li class="rule-item"><span class="rule-num">(8)</span><div><strong>مـدة الـاحـتـجـاز:</strong> إذا مـرّ عـلـى الـر هـيـنـة سـا عـتـيـن مـن غـيـر فـعـل أي شـيـء، فـيـهـا يـتـم إطـلا ق سـراحـهـا.</div></li>
                 </ul>
             </div>
         </div>
 
         <div class="accordion-item">
             <div class="accordion-header" onclick="toggleAccordion(this)">
-                <span>أسعار الرهائن الرسمية</span>
+                <span>أسـعـار الـرّهـائـن الـرّسـمـيـة</span>
                 <span class="accordion-icon">▼</span>
             </div>
             <div class="accordion-body">
                 <table class="price-table">
                     <thead>
                         <tr>
-                            <th>الفئة / الرتبة</th>
-                            <th style="text-align: left;">السعر</th>
+                            <th>الـفـئـة / الـرّتـبـة</th>
+                            <th style="text-align: left;">الـسّـعـر</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td>المواطن أو الموظف</td><td class="amount">5,000 $</td></tr>
-                        <tr><td>جندي</td><td class="amount">10,000 $</td></tr>
-                        <tr><td>جندي أول</td><td class="amount">15,000 $</td></tr>
-                        <tr><td>عريف</td><td class="amount">20,000 $</td></tr>
-                        <tr><td>وكيل رقيب</td><td class="amount">25,000 $</td></tr>
-                        <tr><td>رقيب</td><td class="amount">30,000 $</td></tr>
-                        <tr><td>رقيب أول</td><td class="amount">35,000 $</td></tr>
-                        <tr><td>رئيس رقباء</td><td class="amount">45,000 $</td></tr>
-                        <tr><td>ملازم</td><td class="amount">55,000 $</td></tr>
-                        <tr><td>ملازم أول</td><td class="amount">65,000 $</td></tr>
-                        <tr><td>نقيب</td><td class="amount">75,000 $</td></tr>
-                        <tr><td>رائد</td><td class="amount">85,000 $</td></tr>
-                        <tr><td>مقدم</td><td class="amount">100,000 $</td></tr>
-                        <tr><td>عقيد</td><td class="amount">110,000 $</td></tr>
-                        <tr><td>عميد</td><td class="amount">120,000 $</td></tr>
-                        <tr><td>لواء</td><td class="amount">130,000 $</td></tr>
-                        <tr><td>فريق</td><td class="amount">140,000 $</td></tr>
-                        <tr><td>فريق أول</td><td class="amount">160,000 $</td></tr>
-                        <tr><td>مستشار وزير الداخلية</td><td class="amount">180,000 $</td></tr>
-                        <tr><td>نائب وزير الداخلية</td><td class="amount">220,000 $</td></tr>
-                        <tr><td>وزير الداخلية</td><td class="amount">250,000 $</td></tr>
+                        <tr><td>الـمـوا طـن أو الـمـو ظـف</td><td class="amount">5,000 $</td></tr>
+                        <tr><td>جـنـدي</td><td class="amount">10,000 $</td></tr>
+                        <tr><td>جـنـدي أول</td><td class="amount">15,000 $</td></tr>
+                        <tr><td>عـريـف</td><td class="amount">20,000 $</td></tr>
+                        <tr><td>وكـيـل رقـيـب</td><td class="amount">25,000 $</td></tr>
+                        <tr><td>رقـيـب</td><td class="amount">30,000 $</td></tr>
+                        <tr><td>رقـيـب أول</td><td class="amount">35,000 $</td></tr>
+                        <tr><td>رئـيـس رقـبـاء</td><td class="amount">45,000 $</td></tr>
+                        <tr><td>مـلازم</td><td class="amount">55,000 $</td></tr>
+                        <tr><td>مـلازم أول</td><td class="amount">65,000 $</td></tr>
+                        <tr><td>نـقـيـب</td><td class="amount">75,000 $</td></tr>
+                        <tr><td>رائـد</td><td class="amount">85,000 $</td></tr>
+                        <tr><td>مـقـدم</td><td class="amount">100,000 $</td></tr>
+                        <tr><td>عـقـيـد</td><td class="amount">110,000 $</td></tr>
+                        <tr><td>عـمـيـد</td><td class="amount">120,000 $</td></tr>
+                        <tr><td>لـواء</td><td class="amount">130,000 $</td></tr>
+                        <tr><td>فـريـق</td><td class="amount">140,000 $</td></tr>
+                        <tr><td>فـريـق أول</td><td class="amount">160,000 $</td></tr>
+                        <tr><td>مـسـتـشـار وزيـر الـداخـلـيـة</td><td class="amount">180,000 $</td></tr>
+                        <tr><td>نـائـب وزيـر الـداخـلـيـة</td><td class="amount">220,000 $</td></tr>
+                        <tr><td>وزيـر الـداخـلـيـة</td><td class="amount">250,000 $</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -264,25 +264,25 @@
 
         <div class="accordion-item">
             <div class="accordion-header" onclick="toggleAccordion(this)">
-                <span>تنظيم الهروب الآمن – نظام RP</span>
+                <span>تـنـظـيـم الـهـروب الآمـن – نـظـام RP</span>
                 <span class="accordion-icon">▼</span>
             </div>
             <div class="accordion-body">
                 <ul class="rule-list">
-                    <li class="rule-item"><span class="rule-num">(1)</span><div>يمنع بدء عملية الهروب بدون وجود سبب أو سيناريو واضح داخل الـRP.</div></li>
-                    <li class="rule-item"><span class="rule-num">(2)</span><div>يجب إعطاء فرصة عادلة للطرف الآخر للتفاعل مع السيناريو وعدم إنهائه بشكل مفاجئ.</div></li>
-                    <li class="rule-item"><span class="rule-num">(3)</span><div>يمنع استغلال الأخطاء أو الثغرات في النظام أثناء الهروب.</div></li>
-                    <li class="rule-item"><span class="rule-num">(4)</span><div>يمنع تغيير المركبة أو الملابس بشكل غير منطقي للهروب من السيناريو.</div></li>
-                    <li class="rule-item"><span class="rule-num">(5)</span><div>يمنع الخروج من السيرفر أو استخدام أي طريقة خارج الـRP لتجنب نتيجة السيناريو.</div></li>
-                    <li class="rule-item"><span class="rule-num">(6)</span><div>يجب الالتزام بالـFearRP والمحافظة على واقعية الشخصية أثناء الهروب.</div></li>
-                    <li class="rule-item"><span class="rule-num">(7)</span><div>يمنع استخدام المناطق الآمنة للهروب من السيناريو أو تعطيله.</div></li>
-                    <li class="rule-item"><span class="rule-num">(8)</span><div>في حال انتهاء مدة الهروب المحددة، يجب إيقاف السيناريو والالتزام بتعليمات الإدارة.</div></li>
+                    <li class="rule-item"><span class="rule-num">(1)</span><div>يـمـنـع بـد ء عـمـلـيـة الـهـروب بـد ون و جـود سـبـب أو سـيـنـاريـو وا ضـح د ا خـل الــRP.</div></li>
+                    <li class="rule-item"><span class="rule-num">(2)</span><div>يـجـب إعـطـاء فـر صـة عـا د لـة لـلـطـر ف الآ خـر لـلـتـفـا عـل مـع الـسـيـنـاريـو وعـد م إنـهـائـه بـشـكـل مـفـا جـئ.</div></li>
+                    <li class="rule-item"><span class="rule-num">(3)</span><div>يـمـنـع ا سـتـغـلا ل الأ خـطـاء أو الـثـغـر ات فـي الـنـظـام أ ثـنـاء الـهـروب.</div></li>
+                    <li class="rule-item"><span class="rule-num">(4)</span><div>يـمـنـع تـغـيـيـر الـمـر كـبـة أو الـمـلا بـس بـشـكـل غـيـر مـنـطـقـي لـلـهـروب مـن الـسـيـنـاريـو.</div></li>
+                    <li class="rule-item"><span class="rule-num">(5)</span><div>يـمـنـع الـخـرو ج مـن الـسـيـر فـر أو ا سـتـخـد ام أي طـريـقـة خـار ج الــRP لـتـجـنـب نـتـيـجـة الـسـيـنـاريـو.</div></li>
+                    <li class="rule-item"><span class="rule-num">(6)</span><div>يـجـب الـالـتـزام بـالــFearRP والمـحـافـظـة عـلـى وا قـعـيـة الـشـخـصـيـة أ ثـنـاء الـهـروب.</div></li>
+                    <li class="rule-item"><span class="rule-num">(7)</span><div>يـمـنـع ا سـتـخـد ام الـمـنـا طـق الآ مـنـة لـلـهـروب مـن الـسـيـنـاريـو أو تـعـطـيـلـه.</div></li>
+                    <li class="rule-item"><span class="rule-num">(8)</span><div>فـي حـال انـتـهـاء مـد ة الـهـروب الـمـحـد د ة، يـجـب إيـقـاف الـسـيـنـاريـو والـالـتـزام بـتـعـلـيـمـات الإد ارة.</div></li>
                 </ul>
                 <div class="duration-box">
-                    <h4>⏱️ مدة الهروب الرسمية:</h4>
+                    <h4>مـد ة الـهـروب الـرّسـمـيـة:</h4>
                     <ul>
-                        <li>• الهروب بدون رهائن: 40 ثانية</li>
-                        <li>• الهروب مع رهائن: 2:30 دقيقة</li>
+                        <li>• الـهـروب بـد ون رهـائـن: 40 ثـانـيـة</li>
+                        <li>• الـهـروب مـع رهـائـن: 2:30 دقـيـقـة</li>
                     </ul>
                 </div>
             </div>
@@ -290,75 +290,75 @@
 
         <div class="accordion-item">
             <div class="accordion-header" onclick="toggleAccordion(this)">
-                <span>قوانين الشكاوي</span>
+                <span>قـوانـيـن الـشـكـاوي</span>
                 <span class="accordion-icon">▼</span>
             </div>
             <div class="accordion-body">
                 <ul class="rule-list">
-                    <li class="rule-item"><span class="rule-num">[1]</span><div>يمنع فتح شكوى مرت عليها ساعتين كاملة.</div></li>
-                    <li class="rule-item"><span class="rule-num">[2]</span><div>الشكاوي تتم عن استدعاء الطرفين ثم اتخاذ الإجراء المناسب.</div></li>
-                    <li class="rule-item"><span class="rule-num">[3]</span><div>عدم حضورك وبدون تصويرك 30 دقيقة يتم محاسبتك بشكل فوري.</div></li>
-                    <li class="rule-item"><span class="rule-num">[4]</span><div>تجنباً للإحراج يجب على الجميع حفظ فيديو 30 دقيقة (يوتيوب أو حفظه) وتفك الكام عند الاستدعاء.</div></li>
-                    <li class="rule-item"><span class="rule-num">[5]</span><div>لن تُقبل شكواك في حال ما جبت تصوير من بداية الحالة إلى نهايتها.</div></li>
-                    <li class="rule-item"><span class="rule-num">[6]</span><div>يحق للإدارة استدعائك بأي وقت وطلب التصوير. عدم وجود التصوير = Banned 3 أيام.</div></li>
+                    <li class="rule-item"><span class="rule-num">[1]</span><div>يـمـنـع فـتـح شـكـوى مـرّت عـلـيـهـا سـا عـتـيـن كـا مـلـة.</div></li>
+                    <li class="rule-item"><span class="rule-num">[2]</span><div>الـشـكـاوي تـتـم عـن ا سـتـد عـاء الـطـر فـيـن ثـم اتـخـاذ الإجـرا ء الـمـنـا سـب.</div></li>
+                    <li class="rule-item"><span class="rule-num">[3]</span><div>عـد م حـضـور ك وبـد ون تـصـويـر ك 30 د قـيـقـة يـتـم مـحـا سـبـتـك بـشـكـل فـوري.</div></li>
+                    <li class="rule-item"><span class="rule-num">[4]</span><div>تـجـنـبـاً لـلإحـر ا ج يـجـب عـلـى الـجـمـيـع حـفـظ فـيـد يـو 30 د قـيـقـة (يـوتـيـوب أو حـفـظـه) وتـفـك الـكـام عـنـد الـا سـتـد عـاء.</div></li>
+                    <li class="rule-item"><span class="rule-num">[5]</span><div>لـن تُـقـبـل شـكـوا ك فـي حـال مـا جـبـت تـصـويـر مـن بـد ايـة الـحـا لـة إ لـى نـهـايـتـهـا.</div></li>
+                    <li class="rule-item"><span class="rule-num">[6]</span><div>يـحـق لـلإد ارة ا سـتـد عـا ئـك بـأي و قـت وطـلـب الـتـصـويـر. عـد م و جـود الـتـصـويـر = Banned 3 أ يـام.</div></li>
                 </ul>
             </div>
         </div>
 
         <div class="accordion-item">
             <div class="accordion-header" onclick="toggleAccordion(this)">
-                <span>المناطق الآمنة (Safe Zone)</span>
+                <span>الـمـنـاطـق الآمـنـة (Safe Zone)</span>
                 <span class="accordion-icon">▼</span>
             </div>
             <div class="accordion-body">
                 <ul class="rule-list">
-                    <li class="rule-item"><span class="rule-num">🛡️</span><div>قسم الشرطة (كل أقسام الشرطة آمنة)</div></li>
-                    <li class="rule-item"><span class="rule-num">🛡️</span><div>جميع المكاتب الحكومية</div></li>
-                    <li class="rule-item"><span class="rule-num">🛡️</span><div>موقع التصنيع</div></li>
-                    <li class="rule-item"><span class="rule-num">🛡️</span><div>موقع التجميع</div></li>
-                    <li class="rule-item"><span class="rule-num">🛡️</span><div>ورشات التصليح</div></li>
-                    <li class="rule-item"><span class="rule-num">🛡️</span><div>معرض المركبات</div></li>
-                    <li class="rule-item"><span class="rule-num">🛡️</span><div>السجن</div></li>
-                    <li class="rule-item"><span class="rule-num">🛡️</span><div>مكتب الوظائف</div></li>
-                    <li class="rule-item"><span class="rule-num">🛡️</span><div>جميع المرافق الحكومية</div></li>
-                    <li class="rule-item"><span class="rule-num">🛡️</span><div>المستشفى</div></li>
+                    <li class="rule-item"><span class="rule-num">🛡️</span><div>قـسـم الـشـر طـة (كـل أ قـسـام الـشـر طـة آ مـنـة)</div></li>
+                    <li class="rule-item"><span class="rule-num">🛡️</span><div>جـمـيـع الـمـكـا تـب الـحـكـو مـيـة</div></li>
+                    <li class="rule-item"><span class="rule-num">🛡️</span><div>مـو قـع الـتـصـنـيـع</div></li>
+                    <li class="rule-item"><span class="rule-num">🛡️</span><div>مـو قـع الـتـجـمـيـع</div></li>
+                    <li class="rule-item"><span class="rule-num">🛡️</span><div>ور شـات الـتـصـلـيـح</div></li>
+                    <li class="rule-item"><span class="rule-num">🛡️</span><div>مـعـر ض الـمـر كـبـات</div></li>
+                    <li class="rule-item"><span class="rule-num">🛡️</span><div>الـسـجـن</div></li>
+                    <li class="rule-item"><span class="rule-num">🛡️</span><div>مـكـتـب الـو ظـا ئـف</div></li>
+                    <li class="rule-item"><span class="rule-num">🛡️</span><div>جـمـيـع الـمـر ا فـق الـحـكـو مـيـة</div></li>
+                    <li class="rule-item"><span class="rule-num">🛡️</span><div>الـمـسـتـشـفـى</div></li>
                 </ul>
-                <div class="rule-note">أي موقع يوجد فيه مواطنين يُعتبر آمناً ويمنع عليك فعل أي عمل إجرامي فيه.</div>
+                <div class="rule-note">أي مـو قـع يـو جـد فـيـه مـوا طـنـيـن يُـعـتـبـر آ مـنـاً ويـمـنـع عـلـيـك فـعـل أي عـمـل إجـرامـي فـيـه.</div>
             </div>
         </div>
 
         <div class="accordion-item">
             <div class="accordion-header" onclick="toggleAccordion(this)">
-                <span>قوانين الثقيل والخوذ</span>
+                <span>قـوانـيـن الـثـقـيـل والـخـوذ</span>
                 <span class="accordion-icon">▼</span>
             </div>
             <div class="accordion-body">
                 <ul class="rule-list">
-                    <li class="rule-item"><span class="rule-num">[1]</span><div>يمنع استخدام الخوذ والثقيل إلا بالحالات التالية: سرقة بنك مركزي، خطف رتبة ملازم وما فوق، الاستنفار الأمني، مداهمة القسم.</div></li>
-                    <li class="rule-item"><span class="rule-num">[2]</span><div>يمنع استخدام الثقيل والخوذ بالحالات اللي فوق إلا بأمر من رتبة ضابط وفوق ليكون المسؤول عن جميع الأحداث.</div></li>
-                    <li class="rule-item"><span class="rule-num">[3]</span><div>يمنع استخدام الثقيل والخوذ بشكل دائم، فقط بحالات معينة.</div></li>
-                    <li class="rule-item"><span class="rule-num">[4]</span><div>يمنع استخدام الثقيل والخوذ بدون سبب واضح (مثل إمساك مجرم...).</div></li>
-                    <li class="rule-item"><span class="rule-num">[5]</span><div>في حال انمسك شخص من رئاسة العصابات (بوس عصابة، كو بوس، رئيس مافيا، نائب مافيا) فقط ذول اللي تطلع فيهم ثقيل وخوذة.</div></li>
-                    <li class="rule-item"><span class="rule-num">[6]</span><div>في حال كان فيه سيناريو احتلال... تطلع فيها ثقيل وخوذة.</div></li>
-                    <li class="rule-item"><span class="rule-num">[7]</span><div>في حال بينخطف قائد أو رتبة عليا في وزارة الداخلية أو العصابات ← تطلع ثقيل وخوذة.</div></li>
-                    <li class="rule-item"><span class="rule-num">[8]</span><div>القوانين قابلة للتعديل.</div></li>
+                    <li class="rule-item"><span class="rule-num">[1]</span><div>يـمـنـع ا سـتـخـد ام الـخـوذ والـثـقـيـل إلا بـالـحـا لا ت الـتـالـيـة: سـر قـة بـنـك مـر كـزي، خـطـف ر تـبـة مـلا زم ومـا فـو ق، الـا سـتـنـفـار الأ مـنـي، مـد ا هـمـة الـقـسـم.</div></li>
+                    <li class="rule-item"><span class="rule-num">[2]</span><div>يـمـنـع ا سـتـخـد ام الـثـقـيـل والـخـوذ بـالـحـا لا ت الـلـي فـو ق إلا بـأ مـر مـن ر تـبـة ضـا بـط وفـو ق لـيـكـون الـمـسـؤول عـن جـمـيـع الأ حـد اث.</div></li>
+                    <li class="rule-item"><span class="rule-num">[3]</span><div>يـمـنـع ا سـتـخـد ام الـثـقـيـل والـخـوذ بـشـكـل د ائـم، فـقـط بـحـا لا ت مـعـيـنـة.</div></li>
+                    <li class="rule-item"><span class="rule-num">[4]</span><div>يـمـنـع ا سـتـخـد ام الـثـقـيـل والـخـوذ بـد ون سـبـب وا ضـح (مـثـل إمـسـاك مـجـر م...).</div></li>
+                    <li class="rule-item"><span class="rule-num">[5]</span><div>فـي حـال انـمـسـك شـخـص مـن رئـا سـة الـعـصـا بـات (بـوس عـصـا بـة، كـو بـوس، ر ئـيـس مـا فـيـا، نـائـب مـا فـيـا) فـقـط ذول الـلـي تـطـلـع فـيـهـم ثـقـيـل وخـوذ ة.</div></li>
+                    <li class="rule-item"><span class="rule-num">[6]</span><div>فـي حـال كـان فـيـه سـيـنـاريـو احـتـلا ل... تـطـلـع فـيـهـا ثـقـيـل وخـوذ ة.</div></li>
+                    <li class="rule-item"><span class="rule-num">[7]</span><div>فـي حـال بـيـنـخـطـف قـائـد أو ر تـبـة عـلـيـا فـي و زار ة الـد ا خـلـيـة أو الـعـصـا بـات ← تـطـلـع ثـقـيـل وخـوذ ة.</div></li>
+                    <li class="rule-item"><span class="rule-num">[8]</span><div>الـقـوانـيـن قـا بـلـة لـلـتـعـد يـل.</div></li>
                 </ul>
             </div>
         </div>
 
         <div class="accordion-item">
             <div class="accordion-header" onclick="toggleAccordion(this)">
-                <span>قوانين الإعدامات</span>
+                <span>قـوا نـيـن الإعـدامـات</span>
                 <span class="accordion-icon">▼</span>
             </div>
             <div class="accordion-body">
                 <ul class="rule-list">
-                    <li class="rule-item"><span class="rule-num">[1]</span><div>يسمح الإعدام بأي سلاح كان إلا الأسلحة البيضاء.</div></li>
-                    <li class="rule-item"><span class="rule-num">[2]</span><div>يسمح الإعدام بأي مكان كان في خريطة قراند ولو بالبحر أو الجبال.</div></li>
-                    <li class="rule-item"><span class="rule-num">[3]</span><div>يمنع استخدام العداوات من سيرفرات أخرى.</div></li>
-                    <li class="rule-item"><span class="rule-num">[4]</span><div>يمنع إعدام شخص ما بينك وبينه عداوة أو بسبب إنه خطفك أو لوتك أو سرقك.</div></li>
-                    <li class="rule-item"><span class="rule-num">[5]</span><div>يسمح بأنك تعدم شخص هددك بالإعدام ولكن يجب وجود دليل صوتي (ملزم).</div></li>
-                    <li class="rule-item"><span class="rule-num">[6]</span><div>يجب بعد إعدامه تفنيشه وإلا ما يحسب الإعدام.</div></li>
+                    <li class="rule-item"><span class="rule-num">[1]</span><div>يـسـمـح الإعـد ام بـأي سـلا ح كـان إلا الأ سـلـحـة الـبـيـضـاء.</div></li>
+                    <li class="rule-item"><span class="rule-num">[2]</span><div>يـسـمـح الإعـد ام بـأي مـكـان كـان فـي خـريـطـة قـر ا نـد ولـو بـالـبـحـر أو الـجـبـال.</div></li>
+                    <li class="rule-item"><span class="rule-num">[3]</span><div>يـمـنـع ا سـتـخـد ام الـعـد اوات مـن سـيـر فـر ات أُ خـرى.</div></li>
+                    <li class="rule-item"><span class="rule-num">[4]</span><div>يـمـنـع إعـد ام شـخـص مـا بـيـنـك وبـيـنـه عـد اوة أو بـسـبـب إنـه خـطـفـك أو لـو تـك أو سـر قـك.</div></li>
+                    <li class="rule-item"><span class="rule-num">[5]</span><div>يـسـمـح بـأنـك تـعـد م شـخـص هـد د ك بـالإعـد ام ولـكـن يـجـب و جـود د لـيـل صـو تـي (مـلـزم).</div></li>
+                    <li class="rule-item"><span class="rule-num">[6]</span><div>يـجـب بـعـد إعـد امـه تـفـنـيـشـه وإلا مـا يـحـسـب الإعـد ام.</div></li>
                 </ul>
             </div>
         </div>
@@ -366,17 +366,15 @@
     </main>
 
     <footer>
-        Golf City 2026 © جميع الحقوق محفوظة<br>
-        <a href="https://discord.gg/YOUR_DISCORD_LINK" target="_blank">انضم إلى سيرفر الديسكورد</a>
+        Lord Town 2026 © جـمـيـع الـحـقـوق مـحـفـوظـة<br>
+        <a href="https://discord.gg/EycTu8KDXA" target="_blank">انـضـم إ لـى سـيـر فـر الـد يـسـكـور د</a>
     </footer>
 
     <script>
-        // إمكانية فتح وإغلاق القوائم المنسدلة
         function toggleAccordion(element) {
             const item = element.parentElement;
             const isOpen = item.classList.contains('active');
 
-            // إغلاق باقي القوائم تلقائياً لترتيب العرض
             document.querySelectorAll('.accordion-item').forEach(el => el.classList.remove('active'));
 
             if (!isOpen) {
@@ -384,7 +382,6 @@
             }
         }
 
-        // تشغيل وإيقاف الموسيقى
         const audio = document.getElementById('bgMusic');
         const musicBtn = document.getElementById('musicToggle');
 
@@ -392,15 +389,14 @@
             if (audio.paused) {
                 audio.play();
                 musicBtn.textContent = '🔊';
-                musicBtn.style.boxShadow = '0 0 25px rgba(0, 242, 254, 0.8)';
+                musicBtn.style.boxShadow = '0 0 25px rgba(255, 107, 0, 0.8)';
             } else {
                 audio.pause();
                 musicBtn.textContent = '🎵';
-                musicBtn.style.boxShadow = '0 0 20px rgba(0, 242, 254, 0.5)';
+                musicBtn.style.boxShadow = '0 0 20px rgba(255, 107, 0, 0.5)';
             }
         }
 
-        // تشغيل تلقائي عند أول كليك في الصفحة لتجاوز قيود المتصفحات
         window.addEventListener('click', function() {
             if (audio.paused) {
                 audio.play().then(() => {
